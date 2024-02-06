@@ -4,12 +4,39 @@
   padding: 2rem;
   text-align: center;
   }
+  .header{
+
+  }
 .body{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap
 }
-
-
-
-
-
+.left{
+  background-color: bisque;
+  max-width: 25em;
+}
+.contact,.education{
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.objectives{
+  background-color: blue;
+  text-align: left;
+}
+.right{
+  background-color: cadetblue;
+  text-align: left;
+  max-width: 30em;
+}
+li{
+  list-style-type: none;
+}
+.edit{
+display: flex;
+  justify-content: center;
+ 
+}
