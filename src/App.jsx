@@ -4,7 +4,7 @@ export default function App(){
   
   return(
   <>
-  <div className="header">A CV Application</div>
+  <h1>A CV Application</h1>
 
   <div className="body">
     <div className="left">
@@ -17,38 +17,49 @@ export default function App(){
       </div>
       <div className="education">
         <h2>Education</h2>
-        <span>School:</span>
-        <span>Course:</span>
-        <span>Date:</span>
+        <div className="school">
+          <span>School:</span>
+          <span>Course:</span>
+          <span>Date:</span>
+        </div>        
+        <div className="school">
+          <span>School:</span>
+          <span>Course:</span>
+          <span>Date:</span>
+        </div>
+
       </div>
       <div className="objectives">
         <h2>Objectives</h2>
         <p>An Innovative and creative techie aspiring to explore the realms of Software Development and Technical Writing</p>
       </div>
+      <button className="edit">Edit CV</button>
     </div>
     
     <div className="right">
       <div className="skills">
         <h2>Skills</h2>
-        <div className="hardSkills">
-          <h4>Technical Skills</h4>
-          <ul>
-          <li>HTML5</li>
-          <li>Vanilla CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Test Driven Development</li>
-        </ul>
-        </div>
-        <div className="softSkills">
-          <h4>Soft Skills</h4>
-          <ul>
-            <li>Problem Solving</li>
-            <li>Team Work</li>
-            <li>Innovative</li>
-            <li>Team Lead</li>
-            <li>Self-driven</li>
+        <div className="allSkills">        
+          <div className="hardSkills">
+            <h4>Technical Skills</h4>
+            <ul>
+            <li>HTML5</li>
+            <li>Vanilla CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Test Driven Development</li>
           </ul>
+          </div>
+          <div className="softSkills">
+            <h4>Soft Skills</h4>
+            <ul>
+              <li>Problem Solving</li>
+              <li>Team Work</li>
+              <li>Innovative</li>
+              <li>Team Lead</li>
+              <li>Self-driven</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -63,7 +74,7 @@ export default function App(){
           <p>Curating Technical Content in the simplest way possible to bring levelty where novice meets professional</p>
         </div>
       </div>
-      <button className="edit">Edit CV</button>
+
     </div>
   </div>
   
