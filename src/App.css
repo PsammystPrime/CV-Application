@@ -1,36 +1,53 @@
+body{
+  margin: 0;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: cadetblue;
   }
-  .header{
-
-  }
+h1{
+  text-decoration: underline;
+}
 .body{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap
 }
 .left{
-  background-color: bisque;
   max-width: 25em;
 }
 .contact,.education{
   display: flex;
   flex-direction: column;
-  background-color: aqua;
   text-align: left;
+  margin-bottom: 10px;
+  /* background-color: bisque; */
+}
+.school{
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
 }
 .objectives{
-  background-color: blue;
   text-align: left;
+  /* background-color: bisque; */
 }
 .right{
-  background-color: cadetblue;
   text-align: left;
   max-width: 30em;
+}
+.allSkills{
+  display: flex;
+
+}
+.hardSkills,.softSkills{
+    text-align: left;
+}
+ul{
+  text-align: left;
 }
 li{
   list-style-type: none;
