@@ -14,7 +14,7 @@ h1{
 .body{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 .left{
   max-width: 25em;
@@ -56,4 +56,7 @@ li{
 display: flex;
   justify-content: center;
  
+}
+button{
+  background-color: aqua;
 }
