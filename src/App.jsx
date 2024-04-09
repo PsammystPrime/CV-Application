@@ -129,13 +129,37 @@ export function Experience() {
     </div>
   );
 }
+export function Skills() {
+  const items = ["motors", "rotors"];
+  const [skills, setSkills] = useState(items);
 
+  function handleSkills(input) {
+    // arr.push(input.target.nextSibling.value);
+
+    let items2 = ["hey", "there", "goat"];
+    setSkills(items2);
+  }
+  return (
+    <>
+      <h2>Technical Skills</h2>
+      <button onClick={handleSkills}>click</button>
+      <input type="text" />
+
+      <ul>
+        {skills.map((item) => {
+          return <li key={item}>{item}</li>;
+        })}
+      </ul>
+    </>
+  );
+}
 export default function App() {
   return (
     <>
       <Header />;
       <Education />
       <Experience />
+      <Skills />
     </>
   );
 }
