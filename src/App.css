@@ -10,11 +10,18 @@ label {
 }
 input {
   height: 3.5vh;
-  width: 18vw;
+  width: 25vw;
   color: #0e0c02;
   font-size: large;
   font-weight: 500;
   background-color: rgb(60, 133, 85);
+}
+span {
+  background-color: aqua;
+  min-width: 30vw;
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-right: 25vw;
 }
 header {
   display: flex;
@@ -24,10 +31,7 @@ header section {
   display: flex;
   flex-direction: column;
 }
-header span {
-  background-color: aqua;
-  align-items: start;
-}
+
 .education div {
   display: flex;
   justify-content: space-between;
