@@ -17,11 +17,26 @@ input {
   background-color: rgb(60, 133, 85);
 }
 span {
-  background-color: aqua;
+  /* background-color: aqua; */
   min-width: 30vw;
   font-size: x-large;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-right: 25vw;
+  margin-right: 15vw;
+  border-right: 5px solid green;
+  border-left: 5px solid green;
+  padding: 0 10vw;
+}
+h1 {
+  color: rgb(7, 77, 117);
+  text-decoration: underline;
+  font-variant: small-caps;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkolivegreen;
+  padding: 5px 0;
 }
 header {
   display: flex;
@@ -31,7 +46,6 @@ header section {
   display: flex;
   flex-direction: column;
 }
-
 .education div {
   display: flex;
   justify-content: space-between;
