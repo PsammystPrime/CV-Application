@@ -34,10 +34,62 @@ export function Header() {
   );
 }
 
-export function Education() {}
+export function Education() {
+  const [school, setSchool] = useState("Thika Technical");
+  function handleSchool(input) {
+    setSchool(input.target.value);
+  }
+  const [startDate, setStartDate] = useState("May 2021");
+  function handleStartDate(input) {
+    setStartDate(input.target.value);
+  }
+  const [finishDate, setFinishDate] = useState("Dec 2025");
+  function handleFinishDate(input) {
+    setFinishDate(input.target.value);
+  }
+  const [course, setCourse] = useState(
+    "Electrical and Electronics Engineering"
+  );
+  function handleCourse(input) {
+    setCourse(input.target.value);
+  }
+  return (
+    <div className="education">
+      <h2>Education</h2>
+      <div>
+        <section>
+          <label htmlFor="school">School: </label>
+          <input onChange={handleSchool} type="text" id="school" />
+
+          <label htmlFor="startDate">startDate: </label>
+          <input onChange={handleStartDate} type="Date" id="startDate" />
+
+          <label htmlFor="finishDate">FinishDate: </label>
+          <input onChange={handleFinishDate} type="Date" id="finishDate" />
+
+          <label htmlFor="course">Course: </label>
+          <input onChange={handleCourse} type="text" id="course" />
+        </section>
+
+        <span>
+          <h5>{school}</h5>
+          <p>
+            {startDate} - {finishDate}
+          </p>
+          <p>{course}</p>
+        </span>
+      </div>
+    </div>
+  );
+}
 
 export default function App() {
-  return <Header />;
+  return (
+    <>
+      <Header />;
+      <Education />
+    </>
+  );
 }
 // export default function App() {
 //   const [normal, setModal] = useState(0);
