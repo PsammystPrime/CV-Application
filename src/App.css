@@ -14,3 +14,11 @@ header section {
   display: flex;
   flex-direction: column;
 }
+.experience div {
+  display: flex;
+  justify-content: space-between;
+}
+.experience section {
+  display: flex;
+  flex-direction: column;
+}

@@ -61,13 +61,13 @@ export function Education() {
           <label htmlFor="school">School: </label>
           <input onChange={handleSchool} type="text" id="school" />
 
-          <label htmlFor="startDate">startDate: </label>
+          <label htmlFor="startDate">Start Date: </label>
           <input onChange={handleStartDate} type="Date" id="startDate" />
 
-          <label htmlFor="finishDate">FinishDate: </label>
+          <label htmlFor="finishDate">Finish Date: </label>
           <input onChange={handleFinishDate} type="Date" id="finishDate" />
 
-          <label htmlFor="course">Course: </label>
+          <label htmlFor="course">Field of Study: </label>
           <input onChange={handleCourse} type="text" id="course" />
         </section>
 
@@ -83,11 +83,59 @@ export function Education() {
   );
 }
 
+export function Experience() {
+  const [company, setCompany] = useState("Kenya Power");
+  function handleCompany(input) {
+    setCompany(input.target.value);
+  }
+  const [startDate, setStartDate] = useState("Jan 2023");
+  function handleStartDate(input) {
+    setStartDate(input.target.value);
+  }
+  const [finishDate, setFinishDate] = useState("Dec 2023");
+  function handleFinishDate(input) {
+    setFinishDate(input.target.value);
+  }
+  const [position, setPosition] = useState("Senior Technician");
+  function handlePosition(input) {
+    setPosition(input.target.value);
+  }
+  return (
+    <div className="experience">
+      <h2>Experience</h2>
+      <div>
+        <section>
+          <label htmlFor="company">Company: </label>
+          <input onChange={handleCompany} type="text" id="company" />
+
+          <label htmlFor="startDate">Start Date: </label>
+          <input onChange={handleStartDate} type="Date" id="startDate" />
+
+          <label htmlFor="finishDate">Finish Date: </label>
+          <input onChange={handleFinishDate} type="Date" id="finishDate" />
+
+          <label htmlFor="position">Position: </label>
+          <input onChange={handlePosition} type="text" id="position" />
+        </section>
+
+        <span>
+          <h5>{company}</h5>
+          <p>
+            {startDate} - {finishDate}
+          </p>
+          <p>{position}</p>
+        </span>
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <>
       <Header />;
       <Education />
+      <Experience />
     </>
   );
 }
