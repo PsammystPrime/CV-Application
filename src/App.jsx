@@ -16,6 +16,7 @@ export function Header() {
   }
   return (
     <>
+      <h1>Project CV</h1>
       <h2>Contact</h2>
       <header>
         <section>
